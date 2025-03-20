@@ -1,15 +1,18 @@
 
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface LogoProps {
   className?: string;
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => {
+  const isMobile = useIsMobile();
+  
   return (
     <div className={`font-cyber flex flex-col items-center ${className}`}>
       <div className="relative">
-        <h1 className="text-2xl md:text-3xl font-bold text-cyberpunk-neon-blue animate-neon-text">
+        <h1 className={`${isMobile ? 'text-xl' : 'text-2xl md:text-3xl'} font-bold text-cyberpunk-neon-blue animate-neon-text truncate max-w-[220px] md:max-w-none`}>
           Person Information Finder GPT
         </h1>
         <div className="absolute -bottom-1 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyberpunk-neon-blue to-transparent"></div>
