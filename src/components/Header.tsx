@@ -1,9 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
-import Button from './Button';
 import { useIsMobile } from '@/hooks/use-mobile';
+import MobileMenu from './header/MobileMenu';
+import DesktopNavigation from './header/DesktopNavigation';
+import MobileMenuButton from './header/MobileMenuButton';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,127 +74,19 @@ const Header: React.FC = () => {
           <Logo />
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Button 
-              href="https://chatgpt.com/g/g-67dc2561e2448191a6a47117f9247d64-person-information-finder-gpt" 
-              variant="default" 
-              size="sm"
-              target="_blank"
-            >
-              Use Person Information Finder GPT
-            </Button>
-            <Button 
-              href="https://propertydatafindergpt.lovable.app/?via=aiwebtools" 
-              variant="purple" 
-              size="sm"
-              target="_blank"
-            >
-              Try Property Data Finder GPT
-            </Button>
-            <a 
-              href="#faq" 
-              className="text-white hover:text-cyberpunk-neon-blue transition-colors duration-300"
-              onClick={(e) => handleNavigation(e, '#faq')}
-            >
-              FAQ
-            </a>
-            <a 
-              href="#disclaimer" 
-              className="text-white hover:text-cyberpunk-neon-blue transition-colors duration-300"
-              onClick={(e) => handleNavigation(e, '#disclaimer')}
-            >
-              Disclaimer
-            </a>
-            <Button 
-              href="https://www.aiwebtools.ai" 
-              variant="pink" 
-              size="sm"
-              target="_blank"
-            >
-              More AI Tools
-            </Button>
-          </nav>
+          <DesktopNavigation onNavigation={handleNavigation} />
           
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-cyberpunk-neon-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-cyberpunk-neon-blue rounded-md p-1"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <MobileMenuButton isOpen={mobileMenuOpen} onClick={toggleMobileMenu} />
         </div>
       </div>
       
-      {/* Mobile Menu with improved accessibility and touch interactions */}
-      <div 
-        className={`md:hidden fixed inset-0 bg-cyberpunk-darker/95 backdrop-blur-lg z-40 transition-all duration-300 ${
-          mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-        aria-hidden={!mobileMenuOpen}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobile navigation"
-      >
-        {/* Close button at top right corner for better mobile usability */}
-        <button 
-          className="absolute top-6 right-6 text-cyberpunk-neon-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-cyberpunk-neon-blue rounded-md p-1"
-          onClick={closeMobileMenu}
-          aria-label="Close mobile menu"
-        >
-          <X size={28} />
-        </button>
-        
-        <div className="container mx-auto px-6 py-20">
-          <nav className="flex flex-col items-center space-y-6">
-            <Button 
-              href="https://chatgpt.com/g/g-67dc2561e2448191a6a47117f9247d64-person-information-finder-gpt" 
-              variant="default" 
-              size="sm"
-              className="w-full"
-              target="_blank"
-              onClick={closeMobileMenu}
-            >
-              Use Person Information Finder GPT
-            </Button>
-            <Button 
-              href="https://propertydatafindergpt.lovable.app/?via=aiwebtools" 
-              variant="purple" 
-              size="sm"
-              className="w-full"
-              target="_blank"
-              onClick={closeMobileMenu}
-            >
-              Try Property Data Finder GPT
-            </Button>
-            <a 
-              href="#faq" 
-              className="text-white hover:text-cyberpunk-neon-blue transition-colors duration-300 text-lg touch-manipulation py-2 px-4 w-full text-center"
-              onClick={(e) => handleNavigation(e, '#faq')}
-            >
-              FAQ
-            </a>
-            <a 
-              href="#disclaimer" 
-              className="text-white hover:text-cyberpunk-neon-blue transition-colors duration-300 text-lg touch-manipulation py-2 px-4 w-full text-center"
-              onClick={(e) => handleNavigation(e, '#disclaimer')}
-            >
-              Disclaimer
-            </a>
-            <Button 
-              href="https://www.aiwebtools.ai" 
-              variant="pink" 
-              size="sm"
-              className="w-full"
-              target="_blank"
-              onClick={closeMobileMenu}
-            >
-              More AI Tools
-            </Button>
-          </nav>
-        </div>
-      </div>
+      {/* Mobile Menu */}
+      <MobileMenu 
+        isOpen={mobileMenuOpen} 
+        onClose={closeMobileMenu} 
+        onNavigation={handleNavigation} 
+      />
     </header>
   );
 };
