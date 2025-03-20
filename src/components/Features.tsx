@@ -79,6 +79,18 @@ const Features: React.FC = () => {
       </div>
       
       <div className="container mx-auto px-6">
+        {/* Image moved above HOW IT WORKS section */}
+        <div className="max-w-4xl mx-auto p-6 cyber-card border-cyberpunk-neon-purple mb-16">
+          <div className="max-w-3xl mx-auto">
+            <img 
+              src="https://ideogram.ai/assets/image/lossless/response/gHXnMcOUT0mj-K7G752VAA" 
+              alt="Person Information Finder GPT" 
+              className="w-full h-auto rounded-lg shadow-neon-purple object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        
         <div className="text-center mb-16">
           <div className="inline-block mb-3 px-4 py-1 border border-cyberpunk-neon-blue rounded-full bg-cyberpunk-gray/30 text-cyberpunk-neon-blue text-sm font-cyber">
             HOW IT WORKS
@@ -109,16 +121,6 @@ const Features: React.FC = () => {
           <h3 className="text-2xl font-cyber mb-6 text-white">
             See <span className="text-cyberpunk-neon-pink">Person Information Finder GPT</span> in Action
           </h3>
-          <div className="max-w-4xl mx-auto p-6 cyber-card border-cyberpunk-neon-purple">
-            <div className="max-w-3xl mx-auto">
-              <img 
-                src="https://ideogram.ai/assets/image/lossless/response/gHXnMcOUT0mj-K7G752VAA" 
-                alt="Person Information Finder GPT" 
-                className="w-full h-auto rounded-lg shadow-neon-purple object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>

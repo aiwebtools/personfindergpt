@@ -10,7 +10,7 @@ interface MobileMenuButtonProps {
 const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({ isOpen, onClick }) => {
   return (
     <button 
-      className="md:hidden text-cyberpunk-neon-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-cyberpunk-neon-blue rounded-md p-1"
+      className="md:hidden text-cyberpunk-neon-blue bg-cyberpunk-darker p-2 rounded-md hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-cyberpunk-neon-blue"
       onClick={onClick}
       aria-label="Toggle mobile menu"
       aria-expanded={isOpen}
