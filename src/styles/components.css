@@ -1,0 +1,110 @@
+
+@layer components {
+  .neon-text {
+    @apply text-cyberpunk-neon-blue;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.5);
+  }
+
+  .neon-text-purple {
+    @apply text-cyberpunk-neon-purple;
+    text-shadow: 0 0 10px rgba(153, 0, 255, 0.7), 0 0 20px rgba(153, 0, 255, 0.5);
+  }
+
+  .neon-text-pink {
+    @apply text-cyberpunk-neon-pink;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.5);
+  }
+
+  .neon-border {
+    @apply border border-cyberpunk-neon-blue rounded-md;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+
+  .neon-border-purple {
+    @apply border border-cyberpunk-neon-purple rounded-md;
+    box-shadow: 0 0 10px rgba(153, 0, 255, 0.5), 0 0 20px rgba(153, 0, 255, 0.3);
+  }
+
+  .neon-border-pink {
+    @apply border border-cyberpunk-neon-pink rounded-md;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+  }
+
+  .cyber-button {
+    @apply relative px-8 py-3 bg-transparent border border-cyberpunk-neon-blue text-cyberpunk-neon-blue font-cyber uppercase tracking-wider rounded;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .cyber-button:hover {
+    @apply bg-cyberpunk-neon-blue text-cyberpunk-dark;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.7), 0 0 30px rgba(0, 240, 255, 0.5);
+  }
+
+  .cyber-button::before, .cyber-button::after {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none;
+    background: linear-gradient(45deg, transparent 5%, rgba(0, 240, 255, 0.5) 50%, transparent 95%);
+    background-size: 200% 200%;
+    animation: shine 8s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0.2;
+  }
+  
+  .cyber-button::after {
+    filter: blur(5px);
+  }
+
+  .cyber-button:hover::before, .cyber-button:hover::after {
+    opacity: 0.4;
+  }
+
+  .cyber-button-purple {
+    @apply border-cyberpunk-neon-purple text-cyberpunk-neon-purple;
+    box-shadow: 0 0 10px rgba(153, 0, 255, 0.5), 0 0 20px rgba(153, 0, 255, 0.3);
+  }
+
+  .cyber-button-purple:hover {
+    @apply bg-cyberpunk-neon-purple text-cyberpunk-dark;
+    box-shadow: 0 0 20px rgba(153, 0, 255, 0.7), 0 0 30px rgba(153, 0, 255, 0.5);
+  }
+
+  .cyber-button-purple::before, .cyber-button-purple::after {
+    background: linear-gradient(45deg, transparent 5%, rgba(153, 0, 255, 0.5) 50%, transparent 95%);
+  }
+  
+  .cyber-card {
+    @apply backdrop-blur-lg bg-cyberpunk-gray bg-opacity-30 rounded-lg border border-[rgba(0,240,255,0.2)] p-6 relative overflow-hidden transition-all duration-300;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  }
+  
+  .cyber-card:hover {
+    @apply border-cyberpunk-neon-blue;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  }
+  
+  .cyber-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyberpunk-neon-blue to-transparent opacity-50;
+  }
+  
+  .glass-panel {
+    @apply backdrop-blur-xl bg-cyberpunk-gray bg-opacity-20 rounded-xl border border-[rgba(255,255,255,0.1)];
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cyber-divider {
+    @apply relative h-px w-full my-6 bg-gradient-to-r from-transparent via-cyberpunk-neon-blue to-transparent opacity-50;
+  }
+  
+  .cyber-divider::before {
+    content: '';
+    @apply absolute top-0 left-1/2 w-10 h-[3px] -translate-x-1/2 -translate-y-1/2 bg-cyberpunk-neon-blue rounded-full;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+  }
+  
+  .scan-line {
+    @apply pointer-events-none fixed top-0 left-0 w-full h-[2px] bg-cyberpunk-neon-blue bg-opacity-30 z-50;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    animation: scan-line 10s linear infinite;
+  }

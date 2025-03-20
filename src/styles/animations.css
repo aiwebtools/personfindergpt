@@ -1,0 +1,53 @@
+
+@layer components {
+  /* Glitch effect */
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .glitch {
+    animation: glitch 0.3s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .glitch:hover {
+    animation-play-state: running;
+  }
+  
+  /* Shine effect for cyber buttons */
+  @keyframes shine {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  /* Scan line animation */
+  @keyframes scan-line {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+}
