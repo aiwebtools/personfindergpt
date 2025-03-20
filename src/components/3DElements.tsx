@@ -253,16 +253,18 @@ export const DataStream: React.FC<DataStreamProps> = ({
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className || ''}`}>
       {streams}
-      <style jsx global>{`
-        @keyframes datafall {
-          0% {
-            transform: translateY(-100%);
+      <style>
+        {`
+          @keyframes datafall {
+            0% {
+              transform: translateY(-100%);
+            }
+            100% {
+              transform: translateY(100%);
+            }
           }
-          100% {
-            transform: translateY(100%);
-          }
-        }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
