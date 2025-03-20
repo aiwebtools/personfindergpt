@@ -12,8 +12,8 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
     <div className={`font-cyber flex flex-col items-center ${className}`}>
       <div className="relative">
-        <h1 className={`${isMobile ? 'text-xl' : 'text-2xl md:text-3xl'} font-bold text-cyberpunk-neon-blue animate-neon-text truncate max-w-[220px] md:max-w-none`}>
-          Person Information Finder GPT
+        <h1 className={`${isMobile ? 'text-lg' : 'text-2xl md:text-3xl'} font-bold text-cyberpunk-neon-blue animate-neon-text ${isMobile ? 'max-w-[200px]' : 'max-w-[220px] md:max-w-none'}`}>
+          {isMobile ? 'Person Info Finder GPT' : 'Person Information Finder GPT'}
         </h1>
         <div className="absolute -bottom-1 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyberpunk-neon-blue to-transparent"></div>
       </div>
