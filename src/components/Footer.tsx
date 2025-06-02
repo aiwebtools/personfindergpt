@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Button from './Button';
 import Logo from './Logo';
@@ -52,7 +51,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
+                <a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
                   Terms of Service
                 </a>
               </li>
@@ -117,7 +116,7 @@ const Footer: React.FC = () => {
             <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-cyberpunk-neon-blue transition-colors">
               Privacy Policy
             </a>
-            <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="hover:text-cyberpunk-neon-blue transition-colors">
+            <a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="hover:text-cyberpunk-neon-blue transition-colors">
               Terms of Service
             </a>
           </div>

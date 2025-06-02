@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, Info } from 'lucide-react';
 
 const Disclaimer: React.FC = () => {
   return (
@@ -18,6 +17,17 @@ const Disclaimer: React.FC = () => {
           <div className="flex justify-center mb-6">
             <AlertTriangle size={32} className="text-yellow-500" />
           </div>
+        </div>
+
+        {/* Educational Disclaimer */}
+        <div className="max-w-4xl mx-auto cyber-card border-cyberpunk-neon-pink mb-8">
+          <div className="flex items-center mb-4">
+            <Info size={24} className="text-cyberpunk-neon-pink mr-3" />
+            <h3 className="text-xl font-cyber text-white">Educational & Research Use Only</h3>
+          </div>
+          <p className="text-gray-300">
+            This tool is intended for informational, educational, and research purposes only. Users are responsible for ensuring their use complies with all applicable laws and ethical guidelines.
+          </p>
         </div>
         
         <div className="max-w-4xl mx-auto cyber-card border-cyberpunk-neon-blue">
@@ -53,7 +63,7 @@ const Disclaimer: React.FC = () => {
           
           <h3 className="text-xl font-cyber mb-4 text-white">Governing Law</h3>
           <p className="text-gray-300 mb-6">
-            These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which AI Web Tools LLC operates, without regard to its conflict of law provisions.
+            These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which AI Web Tools LLC operates, without regard to its conflict of law provisions. For complete terms and conditions, please visit our <a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="text-cyberpunk-neon-blue hover:underline">full terms of service</a>.
           </p>
           
           <div className="cyber-divider"></div>
