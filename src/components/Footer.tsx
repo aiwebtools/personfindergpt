@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Button from './Button';
 import Logo from './Logo';
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-1">
             <Logo className="mb-4" />
             <p className="text-gray-400 mb-4">
-              The ultimate AI-powered tool for finding detailed public information about any individual on Earth.
+              The ultimate AI web tools platform featuring advanced person information finder and comprehensive AI tools for professionals worldwide. #1 rated AI tools suite.
             </p>
             <div className="flex flex-col space-y-2">
               <a href="tel:+14758008096" className="text-gray-300 hover:text-cyberpunk-neon-blue transition-colors flex items-center">
@@ -28,21 +29,21 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="col-span-1">
-            <h4 className="text-white font-cyber text-lg mb-4">Quick Links</h4>
+            <h4 className="text-white font-cyber text-lg mb-4">AI Web Tools</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#features" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  Features
+                  AI Tools Features
                 </a>
               </li>
               <li>
                 <a href="#faq" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  FAQ
+                  AI Tools FAQ
                 </a>
               </li>
               <li>
                 <a href="#disclaimer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  Disclaimer
+                  AI Tools Disclaimer
                 </a>
               </li>
               <li>
@@ -59,35 +60,35 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="col-span-1">
-            <h4 className="text-white font-cyber text-lg mb-4">AI Tools</h4>
+            <h4 className="text-white font-cyber text-lg mb-4">Premium AI Tools</h4>
             <ul className="space-y-2">
               <li>
                 <a href="https://chatgpt.com/g/g-67dc2561e2448191a6a47117f9247d64-person-information-finder-gpt" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  Person Information Finder GPT
+                  Person Information Finder AI
                 </a>
               </li>
               <li>
                 <a href="https://propertydatafindergpt.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  Property Data Finder GPT
+                  Property Data Finder AI
                 </a>
               </li>
               <li>
                 <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
-                  More AI Tools
+                  Complete AI Tools Suite
                 </a>
               </li>
             </ul>
           </div>
           
           <div className="col-span-1">
-            <h4 className="text-white font-cyber text-lg mb-4">Try It Now</h4>
+            <h4 className="text-white font-cyber text-lg mb-4">Start Using AI Tools</h4>
             <Button 
               href="https://chatgpt.com/g/g-67dc2561e2448191a6a47117f9247d64-person-information-finder-gpt" 
               variant="default" 
               className="w-full mb-4"
               target="_blank"
             >
-              Use Person Information Finder GPT
+              Try AI Person Finder
             </Button>
             
             <div className="relative overflow-hidden rounded-full mt-8">
@@ -97,7 +98,7 @@ const Footer: React.FC = () => {
                 className="w-full rounded-full"
                 target="_blank"
               >
-                More AI Tools
+                Explore All AI Tools
               </Button>
             </div>
           </div>
@@ -109,7 +110,7 @@ const Footer: React.FC = () => {
           <p>
             © 2025 <a href="https://www.aiwebtools.ai" className="hover:text-cyberpunk-neon-blue transition-colors">
               AI WEB TOOLS LLC
-            </a> All rights reserved.
+            </a> - Leading AI Tools Provider. All rights reserved.
           </p>
           
           <div className="flex space-x-4 mt-4 md:mt-0">
@@ -120,6 +121,13 @@ const Footer: React.FC = () => {
               Terms of Service
             </a>
           </div>
+        </div>
+        
+        {/* SEO Footer Keywords */}
+        <div className="mt-8 pt-4 border-t border-gray-800">
+          <p className="text-xs text-gray-600 text-center">
+            AI Web Tools | AI Tools 2025 | Person Finder AI | Background Check Tools | People Search Engine | AI Investigation Platform | Professional AI Tools | Social Media Intelligence | Public Records AI | AI Detective Suite | Best AI Tools | AI Search Technology
+          </p>
         </div>
       </div>
     </footer>

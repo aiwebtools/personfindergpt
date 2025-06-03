@@ -51,19 +51,19 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-3 px-4 py-1 border border-cyberpunk-neon-pink rounded-full bg-cyberpunk-gray/30 text-cyberpunk-neon-pink text-sm font-cyber animate-fade-in">
-            CONFIDENTIAL ACCESS
+            #1 AI WEB TOOLS PLATFORM
           </div>
           
           <h1 
             ref={headingRef}
             className="text-4xl md:text-5xl lg:text-6xl font-cyber font-bold mb-6 text-white"
           >
-            <span className="block">Find Anyone, Anywhere</span> 
+            <span className="block">AI Web Tools - Find Anyone, Anywhere</span> 
             <span className="text-cyberpunk-neon-blue animate-neon-text">Person Information Finder GPT</span>
           </h1>
           
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto animate-reveal-up" style={{ animationDelay: '0.3s' }}>
-            Access comprehensive, public information about any individual on Earth. Detailed profiles, social media presence, employment history, and more - all in one place.
+            The most advanced AI tools for comprehensive people search. Access detailed public information, social media profiles, employment history, and location data about any individual on Earth with our cutting-edge AI web tools.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-reveal-up" style={{ animationDelay: '0.6s' }}>
@@ -73,20 +73,27 @@ const Hero: React.FC = () => {
               size="lg"
               target="_blank"
             >
-              Start Finding People Now
+              Try AI Person Finder Now
             </Button>
             <Button 
               href="#features" 
               variant="purple" 
               size="lg"
             >
-              Learn More
+              Explore AI Tools
             </Button>
           </div>
           
           <div className="mt-12 p-4 bg-cyberpunk-gray/30 border border-cyberpunk-neon-blue/30 rounded-lg backdrop-blur-sm max-w-3xl mx-auto animate-reveal-up" style={{ animationDelay: '0.9s' }}>
             <p className="text-sm text-gray-400 italic">
-              "Let's find information on anyone on this planet, shall we begin?"
+              "The ultimate AI web tools suite for professional investigators, HR professionals, and researchers worldwide."
+            </p>
+          </div>
+          
+          {/* SEO Keywords Section */}
+          <div className="mt-8 text-xs text-gray-500 max-w-4xl mx-auto">
+            <p className="opacity-60">
+              AI Tools | AI Web Tools | Person Finder | Background Check AI | People Search Engine | AI Investigation Tools | Social Media Finder | Public Records Search | AI Detective Tools | Professional AI Tools 2025
             </p>
           </div>
         </div>
