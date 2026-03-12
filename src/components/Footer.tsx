@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
             
             <div className="relative overflow-hidden rounded-full mt-8">
               <Button 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 variant="purple" 
                 className="w-full rounded-full"
                 target="_blank"
