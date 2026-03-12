@@ -66,7 +66,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onNavigation }
             Disclaimer
           </a>
           <Button 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             variant="pink" 
             size="sm"
             className="w-full"
