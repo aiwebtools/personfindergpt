@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyberpunk-neon-blue transition-colors">
                   Complete AI Tools Suite
                 </a>
               </li>
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
             
             <div className="relative overflow-hidden rounded-full mt-8">
               <Button 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 variant="purple" 
                 className="w-full rounded-full"
                 target="_blank"
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>
-            © 2025 <a href="https://www.aiwebtools.ai" className="hover:text-cyberpunk-neon-blue transition-colors">
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyberpunk-neon-blue transition-colors">
               AI WEB TOOLS LLC
             </a> - Leading AI Tools Provider. All rights reserved.
           </p>

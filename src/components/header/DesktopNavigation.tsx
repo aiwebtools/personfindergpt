@@ -40,7 +40,7 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({ onNavigation }) =
         Disclaimer
       </a>
       <Button 
-        href="https://www.aiwebtools.ai" 
+        href="https://aiwebtools.lovable.app/?via=aiwebtools" 
         variant="pink" 
         size="sm"
         target="_blank"

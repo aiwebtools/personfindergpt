@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
     const heading = headingRef.current;
     if (!heading) return;
     
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
     
     const triggerGlitch = () => {
       heading.classList.add('glitch');

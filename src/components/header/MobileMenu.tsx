@@ -12,7 +12,7 @@ interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onNavigation }) => {
   return (
     <div 
-      className={`md:hidden fixed inset-0 bg-cyberpunk-darker/95 backdrop-blur-lg z-40 transition-all duration-300 ${
+      className={`md:hidden fixed inset-0 bg-cyberpunk-darker backdrop-blur-lg z-40 transition-all duration-200 ${
         isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
       aria-hidden={!isOpen}
@@ -66,7 +66,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onNavigation }
             Disclaimer
           </a>
           <Button 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             variant="pink" 
             size="sm"
             className="w-full"
