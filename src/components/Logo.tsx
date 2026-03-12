@@ -18,7 +18,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
         <div className="absolute -bottom-1 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyberpunk-neon-blue to-transparent"></div>
       </div>
       <p className="text-xs text-white/70 mt-1">
-        Presented by <a href="https://www.aiwebtools.ai" className="text-cyberpunk-neon-pink hover:underline transition-all">AiWebTools.Ai</a>
+        Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="text-cyberpunk-neon-pink hover:underline transition-all" target="_blank" rel="noopener noreferrer">AiWebTools.Ai</a>
       </p>
     </div>
   );

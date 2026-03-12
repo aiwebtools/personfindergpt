@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>
-            © 2025 <a href="https://www.aiwebtools.ai" className="hover:text-cyberpunk-neon-blue transition-colors">
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyberpunk-neon-blue transition-colors">
               AI WEB TOOLS LLC
             </a> - Leading AI Tools Provider. All rights reserved.
           </p>
